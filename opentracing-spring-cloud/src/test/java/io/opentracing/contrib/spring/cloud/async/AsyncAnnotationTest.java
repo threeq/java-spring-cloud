@@ -35,6 +35,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -45,6 +47,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AsyncAnnotationTest {
 
   @org.springframework.context.annotation.Configuration
+  @EnableAsync
   static class Configuration {
 
     @Bean
