@@ -14,7 +14,7 @@ edgware:
 	@./mvnw clean test -Dversion.org.springframework.boot=1.5.9.RELEASE -Dversion.org.springframework.cloud-spring-cloud-dependencies=Edgware.RELEASE
 
 finchley:
-    @./mvnw clean test -Dversion.org.springframework.boot=2.0.0.RELEASE -Dversion.org.springframework.cloud-spring-cloud-dependencies=Finchley.M7
+	@./mvnw clean test -Dversion.org.springframework.boot=2.0.0.RELEASE -Dversion.org.springframework.cloud-spring-cloud-dependencies=Finchley.M7
 
 classpath:
 	@for profile in $(PROFILES) ; do \
