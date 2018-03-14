@@ -31,6 +31,9 @@ jobs:
     - env: [ NAME=edgware ]
       script: make edgware
 
+    - env: [ NAME=finchley ]
+      script: make finchley
+
     - env: [ NAME=classpath-no-dependencies ]
       script: PROFILES=nodeps make classpath
 
